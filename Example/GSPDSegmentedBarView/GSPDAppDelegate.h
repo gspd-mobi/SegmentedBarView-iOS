@@ -2,8 +2,8 @@
 //  GSPDAppDelegate.h
 //  GSPDSegmentedBarView
 //
-//  Created by Alexander Kiyaykin on 01/19/2016.
-//  Copyright (c) 2016 Alexander Kiyaykin. All rights reserved.
+//  Created by Alexander Kiyaykin.
+//  Copyright (c) 2016 GSPD. All rights reserved.
 //
 
 @import UIKit;

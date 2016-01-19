@@ -1,0 +1,14 @@
+PODS:
+  - GSPDSegmentedBarView (0.1.0)
+
+DEPENDENCIES:
+  - GSPDSegmentedBarView (from `../`)
+
+EXTERNAL SOURCES:
+  GSPDSegmentedBarView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GSPDSegmentedBarView: 28ea9b6f42c5d2f75022903501320f94f3e58f19
+
+COCOAPODS: 0.39.0

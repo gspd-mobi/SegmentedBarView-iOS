@@ -1,27 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mU2-lS-mkq">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <scene sceneID="JMU-G3-Ewv">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="GSPDViewController" sceneMemberID="viewController">
+                <viewController id="mU2-lS-mkq" customClass="GSPDViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="uNL-Z4-HGN"/>
+                        <viewControllerLayoutGuide type="bottom" id="uHu-X7-hYE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                    <view key="view" contentMode="scaleToFill" id="j3b-oB-cf9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWU-9E-Tk8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRH-iD-QPI" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMx-pL-EL4" customClass="GSPDSegmentedBarView">
+                                                <rect key="frame" x="0.0" y="25" width="600" height="85"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="N0O-bi-BMn"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="MMx-pL-EL4" firstAttribute="top" secondItem="DRH-iD-QPI" secondAttribute="top" constant="25" id="OyT-rK-D2i"/>
+                                            <constraint firstItem="MMx-pL-EL4" firstAttribute="leading" secondItem="DRH-iD-QPI" secondAttribute="leading" id="eNz-Ck-ztF"/>
+                                            <constraint firstAttribute="trailing" secondItem="MMx-pL-EL4" secondAttribute="trailing" id="elU-6Y-Xxi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DRH-iD-QPI" firstAttribute="leading" secondItem="HWU-9E-Tk8" secondAttribute="leading" id="Ct6-Df-so5"/>
+                                    <constraint firstAttribute="trailing" secondItem="DRH-iD-QPI" secondAttribute="trailing" id="GGz-Hv-DZD"/>
+                                    <constraint firstItem="DRH-iD-QPI" firstAttribute="top" secondItem="HWU-9E-Tk8" secondAttribute="top" id="GRe-89-icb"/>
+                                    <constraint firstAttribute="bottom" secondItem="DRH-iD-QPI" secondAttribute="bottom" id="Oog-r7-eOk"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HWU-9E-Tk8" secondAttribute="trailing" id="AEi-oI-YJT"/>
+                            <constraint firstItem="HWU-9E-Tk8" firstAttribute="leading" secondItem="j3b-oB-cf9" secondAttribute="leading" id="BdB-R2-ggo"/>
+                            <constraint firstItem="HWU-9E-Tk8" firstAttribute="top" secondItem="j3b-oB-cf9" secondAttribute="top" id="EdP-rV-aLF"/>
+                            <constraint firstItem="DRH-iD-QPI" firstAttribute="height" secondItem="j3b-oB-cf9" secondAttribute="height" id="lcn-qR-D1S"/>
+                            <constraint firstItem="uHu-X7-hYE" firstAttribute="top" secondItem="HWU-9E-Tk8" secondAttribute="bottom" id="r7z-gB-FoC"/>
+                            <constraint firstItem="DRH-iD-QPI" firstAttribute="width" secondItem="j3b-oB-cf9" secondAttribute="width" id="uhu-IG-ihw"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="scrollView" destination="HWU-9E-Tk8" id="7va-n6-9ky"/>
+                        <outlet property="segmentedBarViewFromStoryboard" destination="MMx-pL-EL4" id="SUr-fb-iIS"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGq-Bb-vDz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="529" y="464"/>
         </scene>
     </scenes>
 </document>
