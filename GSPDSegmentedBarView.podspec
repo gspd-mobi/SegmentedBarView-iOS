@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = "GSPDSegmentedBarView"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "Custom UI control for iOS which is showing data as a segments and a value inside them."
 
   s.description      = <<-DESC
-                       Custom UI control for iOS which is showing data as a segments and a value inside them.
+                       Customizable UI control for iOS which is showing data as a segments and a value inside them.
                        DESC
 
   s.homepage         = "https://github.com/gspd-mobi/SegmentedBarView-iOS"
