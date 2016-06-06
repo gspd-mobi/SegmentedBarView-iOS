@@ -62,3 +62,6 @@ Alexander Kiyaykin, GSPD, alexander.kiyaykin@gspd.mobi
 ## License
 
 GSPDSegmentedBarView is available under the MIT license. See the LICENSE file for more info.
+
+-------
+This code was produced for Clinishare Ltd. This code is published as open-source with the permission of Clinishare Ltd. www.clinishare.net
