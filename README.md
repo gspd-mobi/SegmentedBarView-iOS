@@ -57,7 +57,7 @@ pod "GSPDSegmentedBarView"
 
 ## Author
 
-Alexander Kiyaykin, GSPD, alexander.kiyaykin@gspd.mobi
+Alexander Kiyaykin, GSPD, company@gspd.mobi
 
 ## License
 
